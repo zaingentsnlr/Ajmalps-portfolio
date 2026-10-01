@@ -9,3 +9,7 @@
 .tool-group h3{font-size:11px;font-weight:600;letter-spacing:1.2px;color:var(--muted);margin-bottom:13px}.tool-group p{font-size:14px;line-height:1.9;word-spacing:0}.tool-group .tool-note{font-size:12px;color:var(--muted);margin-top:5px}
 .dialog-detail ul{padding-left:20px;margin:0}.dialog-detail li{font-size:14px;line-height:1.8;color:#62665b;margin:7px 0}.dialog-detail p{font-size:14px;color:#62665b}.dialog-detail h3{font-size:15px}.contact>div>p:not(.copy-status){max-width:760px}
 @media(max-width:600px){.toolbelt{grid-template-columns:1fr;gap:26px}.tool-group:last-child{grid-column:auto}.tool-group p{margin-top:0}.hero-top{flex-wrap:wrap}.hero-top .eyebrow{max-width:230px}.project-caption .project-summary{font-size:13px}.contact .eyebrow{font-size:9px;letter-spacing:1px}}
+
+/* Experience rows are informational, with no decorative link affordance. */
+.timeline article{grid-template-columns:1fr 2.3fr}
+@media(max-width:600px){.timeline article{grid-template-columns:1fr}}
