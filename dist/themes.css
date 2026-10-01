@@ -45,3 +45,29 @@ body.theme-open{overflow:hidden}
 body,.about,.project-cover,.contact,.ticker,.theme-trigger{transition:background-color .25s ease,color .25s ease}
 @media(max-width:600px){.theme-trigger{right:14px;bottom:calc(14px + env(safe-area-inset-bottom))}#theme-dialog{padding:24px 18px}footer{padding-bottom:90px}}
 @media(prefers-reduced-motion:reduce){body,.about,.project-cover,.contact,.ticker,.theme-trigger{transition:none}}
+
+/* Tertiary accents: supporting details only; Original stays unchanged. */
+:root[data-theme="crimson"]{--tertiary:#F3E9DC;--on-tertiary:#1A1A1A;--tertiary-text:#F3E9DC}
+.theme-option[data-palette="crimson"]{--swatch-c:#F3E9DC}
+:root[data-theme="blue"]{--tertiary:#FFD6A5;--on-tertiary:#182040;--tertiary-text:#874619}
+.theme-option[data-palette="blue"]{--swatch-c:#FFD6A5}
+:root[data-theme="graphite"]{--tertiary:#C4B5FD;--on-tertiary:#23262F;--tertiary-text:#C4B5FD}
+.theme-option[data-palette="graphite"]{--swatch-c:#C4B5FD}
+:root[data-theme="apricot"]{--tertiary:#32154E;--on-tertiary:#FFD6A5;--tertiary-text:#32154E}
+.theme-option[data-palette="apricot"]{--swatch-c:#32154E}
+:root[data-theme="dragonfruit"]{--tertiary:#FFE0EC;--on-tertiary:#1E1033;--tertiary-text:#FFE0EC}
+.theme-option[data-palette="dragonfruit"]{--swatch-c:#FFE0EC}
+:root[data-theme="neon"]{--tertiary:#DDD4F5;--on-tertiary:#2D1B69;--tertiary-text:#DDD4F5}
+.theme-option[data-palette="neon"]{--swatch-c:#DDD4F5}
+:root[data-theme="iris"]{--tertiary:#FFF8E7;--on-tertiary:#3A0CA3;--tertiary-text:#FFF8E7}
+.theme-option[data-palette="iris"]{--swatch-c:#FFF8E7}
+:root[data-theme="emerald"]{--tertiary:#A65F3E;--on-tertiary:#FFFFFF;--tertiary-text:#88482C}
+.theme-option[data-palette="emerald"]{--swatch-c:#A65F3E}
+
+html[data-theme]:not([data-theme="original"]) .steps>div>span{color:var(--tertiary-text)}
+html[data-theme]:not([data-theme="original"]) .cover-top .status{background:var(--tertiary);color:var(--on-tertiary);opacity:1;padding:4px 7px;border-radius:20px}
+html[data-theme]:not([data-theme="original"]) .dialog-status{background:var(--tertiary);color:var(--on-tertiary)}
+html[data-theme]:not([data-theme="original"]) .route i,html[data-theme]:not([data-theme="original"]) .route b{background:var(--tertiary);color:var(--on-tertiary)}
+html[data-theme]:not([data-theme="original"]) .route:before{border-color:var(--tertiary-text)}
+html[data-theme]:not([data-theme="original"]) .theme-trigger>span{background:conic-gradient(var(--accent) 0 45%,var(--bg) 45% 80%,var(--tertiary) 80% 100%)}
+.theme-option:not([data-palette="original"]) .theme-swatch{background:conic-gradient(var(--swatch-a) 0 45%,var(--swatch-b) 45% 80%,var(--swatch-c) 80% 100%)}
