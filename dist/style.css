@@ -20,3 +20,24 @@
 .ticker-group{display:flex;align-items:center;justify-content:space-around;gap:var(--ticker-gap);padding-inline:calc(var(--ticker-gap)/2);min-width:100vw;flex-shrink:0}
 .ticker-group>*{flex-shrink:0}
 @media(max-width:600px){.ticker{--ticker-gap:25px}}
+
+/* A readable narrative, with detailed experience available on demand. */
+.story-intro{max-width:720px;font-size:17px;line-height:1.8;color:var(--muted);margin-bottom:38px}
+.story-path{list-style:none;padding:0;margin:0}
+.story-path>li{display:grid;grid-template-columns:1fr 2.3fr;gap:30px;padding:28px 0;border-top:1px solid var(--line)}
+.story-stage{font-size:10px;font-weight:600;letter-spacing:1.2px;color:var(--accent-text,var(--accent));line-height:1.8}
+.story-stage small{display:block;font-size:11px;letter-spacing:0;font-weight:400;color:var(--muted);margin-top:5px}
+.story-path h3{font-size:24px;letter-spacing:-.6px;font-weight:500;margin-bottom:12px}
+.story-path p,.story-retail p{font-size:14px;line-height:1.9;color:var(--muted);max-width:660px}
+.story-retail{background:var(--surface,#e9e9df);border-radius:5px;display:grid;grid-template-columns:1fr 1.5fr;gap:45px;padding:38px;margin:24px 0 36px}
+.story-retail .eyebrow{display:block;font-size:9px;color:var(--muted);margin-bottom:17px}
+.story-retail h3{font-family:'Manrope',Arial,sans-serif;font-size:32px;line-height:1.15;letter-spacing:-1px;font-weight:500;margin-bottom:22px}
+.story-retail p+p{margin-top:17px}
+.story-retail .story-closing{color:var(--ink)}
+.story-records{border-top:1px solid var(--line)}
+.story-records summary{padding:24px 0;cursor:pointer;font-size:14px;list-style:none;display:flex;align-items:center;justify-content:space-between}
+.story-records summary::-webkit-details-marker{display:none}
+.story-records summary span{font-size:21px}
+.story-records[open] summary span{transform:rotate(45deg)}
+.story-records summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+@media(max-width:600px){.story-intro{font-size:15px;margin-bottom:28px}.story-path>li{grid-template-columns:1fr;gap:13px;padding:25px 0}.story-path h3{font-size:23px}.story-path p,.story-retail p{font-size:13px}.story-retail{grid-template-columns:1fr;gap:24px;padding:25px 22px}.story-retail h3{font-size:30px}}
