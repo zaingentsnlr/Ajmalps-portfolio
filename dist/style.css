@@ -13,3 +13,10 @@
 /* Experience rows are informational, with no decorative link affordance. */
 .timeline article{grid-template-columns:1fr 2.3fr}
 @media(max-width:600px){.timeline article{grid-template-columns:1fr}}
+
+/* Two equal, viewport-filling groups make the loop boundary seamless. */
+.ticker{--ticker-gap:45px}
+.ticker>.ticker-track{gap:0}
+.ticker-group{display:flex;align-items:center;justify-content:space-around;gap:var(--ticker-gap);padding-inline:calc(var(--ticker-gap)/2);min-width:100vw;flex-shrink:0}
+.ticker-group>*{flex-shrink:0}
+@media(max-width:600px){.ticker{--ticker-gap:25px}}
