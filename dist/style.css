@@ -48,8 +48,3 @@ header.menu-open nav{display:flex;position:absolute;top:78px;left:0;right:0;back
 header.menu-open nav a{padding:15px 0;font-size:14px;border-bottom:1px solid var(--line)}
 header.menu-open nav a:last-child{border-bottom:0}
 }
-
-.search-profile{margin-top:30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;display:grid;grid-template-columns:.9fr 2fr;gap:28px;align-items:start}
-.search-profile h3{margin:8px 0 0;font-size:30px;letter-spacing:-1px}
-.search-profile p{margin:0;color:var(--muted);font-size:18px;line-height:1.65;max-width:980px}
-@media(max-width:800px){.search-profile{grid-template-columns:1fr;gap:12px}.search-profile h3{font-size:25px}.search-profile p{font-size:15px}}
