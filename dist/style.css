@@ -50,13 +50,13 @@ header.menu-open nav a:last-child{border-bottom:0}
 }
 
 /* Official project brand marks */
-.project-brand-logo{display:block;object-fit:contain}
+.project-brand-logo{display:block;object-fit:contain}.zain-brand{width:54px;height:54px;margin:0 0 8px}
 .pharma-art{padding-top:38px}
 .pharma-brand{width:52px;height:52px;margin:0 auto 9px}
 .dpr-brand-lockup{display:flex;align-items:center;gap:12px}
 .dpr-brand{width:66px;height:66px;flex:0 0 auto}
 @media(max-width:640px){
-  .pharma-art{padding-top:34px}
+  .zain-brand{width:46px;height:46px;margin-bottom:6px}\n  .pharma-art{padding-top:34px}
   .pharma-brand{width:46px;height:46px;margin-bottom:7px}
   .dpr-brand-lockup{gap:8px}
   .dpr-brand{width:52px;height:52px}
