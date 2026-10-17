@@ -61,3 +61,22 @@ header.menu-open nav a:last-child{border-bottom:0}
   .dpr-brand-lockup{gap:8px}
   .dpr-brand{width:52px;height:52px}
 }
+
+/* Mobile overflow and alignment repair */
+html,body{max-width:100%;overflow-x:clip}
+.projects,.project,.project-cover,.project-caption{min-width:0}
+@media(max-width:600px){
+  .section{width:100%;max-width:100%}
+  .project,.project-cover,.project-caption{width:100%;max-width:100%}
+  .project-caption>div{min-width:0}
+  .project-caption>span{margin-left:10px}
+  .pos-art{gap:18px}
+  .receipt{width:min(140px,42vw)}
+  .pos-word{font-size:clamp(32px,10.5vw,42px)}
+  .contact>div{min-width:0;width:100%}
+  .email{max-width:100%;overflow-wrap:anywhere;word-break:break-word}
+  .contact-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 22px;align-items:center}
+  .contact-links button{grid-column:1/-1;width:max-content;max-width:100%}
+  .contact-links a{min-width:0;white-space:nowrap}
+  footer{gap:18px;flex-wrap:wrap}
+}
