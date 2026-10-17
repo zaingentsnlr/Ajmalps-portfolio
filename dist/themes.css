@@ -75,3 +75,20 @@ html[data-theme]:not([data-theme="original"]) .theme-trigger>span{background:con
 /* Keep palette edges clean when magnified: no gradient beneath a translucent border. */
 .theme-swatch,.theme-trigger>span{border:0;clip-path:circle(50%);aspect-ratio:1;flex-shrink:0}
 .theme-option[aria-pressed="true"]{border:2px solid var(--ink);padding:9px;box-shadow:none}
+
+
+/* Emerald palette: 60% champagne, 30% emerald, 10% warm clay */
+html[data-theme="emerald"]{
+  --tertiary:#A65F3E;
+  --tertiary-text:#88482C;
+  --tertiary-soft:#D89A78;
+  --on-tertiary:#FFFFFF;
+}
+html[data-theme="emerald"] :is(.progress,.orbit){background:var(--tertiary)}
+html[data-theme="emerald"] :is(.logo span,h1>span:not(.period),h1 .period,h2 em,.asterisk){color:var(--tertiary-text)}
+html[data-theme="emerald"] :is(.availability i,.contact .eyebrow i){background:var(--tertiary);box-shadow:0 0 0 4px color-mix(in srgb,var(--tertiary) 16%,transparent)}
+html[data-theme="emerald"] .ticker b{color:var(--tertiary-soft)}
+html[data-theme="emerald"] .contact h2 em,
+html[data-theme="emerald"] .contact .email:hover{color:var(--tertiary-soft)}
+html[data-theme="emerald"] .button:hover{background:var(--tertiary)}
+html[data-theme="emerald"] .story-stage{color:var(--tertiary-text)}
